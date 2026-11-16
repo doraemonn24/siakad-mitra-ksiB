@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+:root {
+  --bg-app: #F3F5F8;
+  --bg-panel: #FFFFFF;
+  --bg-subtle: #F8FAFC;
+  --bg-table-head: #EDF1F6;
+  --bg-table-hover: #F5F8FC;
+  --border-color: #DCE3EC;
+  --border-strong: #C5D0DE;
+  --text-main: #18212D;
+  --text-muted: #4E5D71;
+  --accent: #1F4E79;
+  --accent-hover: #2B6AA3;
+  --accent-soft: #E9F0F7;
+  --sidebar-bg: #14283C;
+  --sidebar-text: #D3DDE9;
+  --sidebar-hover: #1E3A56;
+  --sidebar-active: #274D73;
+  --status-green-text: #1B7A43;
+  --status-green-bg: #E7F6ED;
+  --status-green-border: #B4E0C5;
+  --status-yellow-text: #80540A;
+  --status-yellow-bg: #FFF3D1;
+  --status-yellow-border: #EDD48E;
+  --status-red-text: #A4262C;
+  --status-red-bg: #FBE9EA;
+  --status-red-border: #EAB8BB;
+  --code-bg: #0F172A;
+  --code-text: #E2E8F0;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-app: #0D141D;
+    --bg-panel: #151F2B;
+    --bg-subtle: #1A2635;
+    --bg-table-head: #1E2C3E;
+    --bg-table-hover: #1C2939;
+    --border-color: #29384A;
+    --border-strong: #394D65;
+    --text-main: #E7EEF7;
+    --text-muted: #9FB0C4;
+    --accent: #3B82C4;
+    --accent-hover: #5196D6;
+    --accent-soft: #1B324B;
+    --sidebar-bg: #0F1E2E;
+    --sidebar-text: #D3DDE9;
+    --sidebar-hover: #19314A;
+    --sidebar-active: #234568;
+    --status-green-text: #6EE7A0;
+    --status-green-bg: #112D1E;
+    --status-green-border: #235E3F;
+    --status-yellow-text: #FCD36A;
+    --status-yellow-bg: #2E230B;
+    --status-yellow-border: #6B5016;
+    --status-red-text: #FCA5A8;
+    --status-red-bg: #331517;
+    --status-red-border: #72292E;
+    --code-bg: #090E16;
+    --code-text: #E2E8F0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: "IBM Plex Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+code,
+pre,
+.font-mono {
+  font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

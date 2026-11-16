@@ -1,0 +1,8 @@
+{
+  "name": "SIAKAD Mitra",
+  "description": "Sistem Informasi Akademik fiktif Universitas Mitra (simulasi) versi 3.4.7 sebagai objek audit keamanan sistem informasi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
